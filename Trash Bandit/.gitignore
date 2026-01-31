@@ -100,4 +100,5 @@ InitTestScene*.unity*
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
 
 # Custom ignore files:
-.DS_Store
+../.DS_Store
+.DS_Stores
