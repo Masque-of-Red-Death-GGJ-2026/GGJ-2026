@@ -14,6 +14,9 @@ public class CatcherChase : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("GameOver");
+        if (collision.gameObject.tag == "Player")
+        {
+            Debug.Log("GameOver");
+        }
     }
 }
