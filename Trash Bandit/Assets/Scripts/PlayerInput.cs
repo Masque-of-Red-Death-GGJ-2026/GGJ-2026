@@ -1,9 +1,14 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerInput : MonoBehaviour
 {
     public float horizontalInput { get; private set; }
+    public bool jumpInput { get; private set; }
+    
+    public event EventHandler OnJumpInputPressed;
+    
     // Update is called once per frame
     void Update()
     {
@@ -17,6 +22,11 @@ public class PlayerInput : MonoBehaviour
         else
         {
             horizontalInput = 0;
+        }
+
+        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        {
+            OnJumpInputPressed?.Invoke(this, EventArgs.Empty);
         }
     }
 }
