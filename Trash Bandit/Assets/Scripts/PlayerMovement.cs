@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float jumpForce;
     [SerializeField] private float airAcceleration;
 
+    public EventHandler OnObstacleCollision;
+
     // Update is called once per frame
     void Start()
     {
@@ -34,22 +36,35 @@ public class PlayerMovement : MonoBehaviour
 
     bool CheckGrounded()
     {
-        Vector3 bottomCenter = new Vector3(
+        Vector2 bottomCenter = new Vector2(
             collider.bounds.center.x,
-            collider.bounds.center.y - collider.bounds.extents.y,
-            collider.bounds.center.z
+            collider.bounds.center.y - collider.bounds.extents.y
         );
-        var boxHeight = 1f;
-        var raycast = Physics2D.BoxCast(bottomCenter, new Vector2(collider.bounds.size.y, boxHeight), 0, Vector2.down, 0f, LayerMask.GetMask("Platform"));
-        return raycast.collider != null;
+
+        Vector2 rightCenter = new Vector2(
+            collider.bounds.center.x + collider.bounds.extents.x,
+            collider.bounds.center.y
+        );
         
+        var boxHeight = 0.5f;
+        var raycast = Physics2D.BoxCast(bottomCenter, new Vector2(collider.bounds.size.x, boxHeight), 0, Vector2.down, 0f, LayerMask.GetMask("Platform"));
+        return raycast.collider;
         //var raycast = Physics2D.Raycast(bottomCenter, Vector2.down, 0.5f, LayerMask.GetMask("Platform"));
+    }
+
+    public bool CheckCollision()
+    {
+        Vector3 rightCenter = new Vector3(
+            collider.bounds.center.x + collider.bounds.extents.x,
+            collider.bounds.center.y
+        );
+        var boxHeight = 0.5f;
+        var collisioncast = Physics2D.BoxCast(rightCenter, new Vector2(boxHeight ,collider.bounds.size.y), 0, Vector2.right, 0f);
+        return collisioncast.collider;
     }
 
     void FixedUpdate()
     {
-        var acceleration = CheckGrounded() ? groundAcceleration : airAcceleration;
-        rb.AddForce(new Vector2(playerInput.horizontalInput, 0) * acceleration, ForceMode2D.Force);
-        rb.linearVelocity = Vector2.ClampMagnitude(rb.linearVelocity, playerMaxVelocity);
+        
     }
 }
