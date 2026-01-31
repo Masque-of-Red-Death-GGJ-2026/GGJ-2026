@@ -101,4 +101,5 @@ InitTestScene*.unity*
 
 # Custom ignore files:
 ../.DS_Store
-.DS_Stores
+.DS_Store
+.idea
