@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2bfcf9607dda28843b25d29731362eef
+guid: 7e28434a6afa4d640b769894c5a0ab97
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3253942350301595183
-    second: Raccoon - 3_0
+      213: 4086682028399749915
+    second: Raccoon - 2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,16 +96,29 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Raccoon - 3_0
+      name: Raccoon - 2_0
       rect:
         serializedVersion: 2
-        x: 185
+        x: 92
         y: 154
-        width: 1862
+        width: 1955
         height: 808
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1d97caa2caca7d2d0800000000000000
-      internalID: -3253942350301595183
+      spriteID: b1b6db417afc6b830800000000000000
+      internalID: 4086682028399749915
       vertices: []
       indices: 
       edges: []
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Raccoon - 3_0: -3253942350301595183
+      Raccoon - 2_0: 4086682028399749915
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

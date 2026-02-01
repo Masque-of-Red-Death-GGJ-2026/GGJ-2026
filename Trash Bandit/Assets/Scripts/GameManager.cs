@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public bool moveWorld = true;
     public bool gameOver = false;
     public TextMeshProUGUI GameScoreTextUI;
+    [SerializeField] GameObject gameOverGraphic;
     
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -33,6 +34,7 @@ public class GameManager : MonoBehaviour
         GameOver();
         gameOverScreen.ShowGameOver();
         musicManager.playGameOver();
+        gameOverGraphic.SetActive(true);
     }
 
     private void On_Obstacle_Collision(object sender, EventArgs e)

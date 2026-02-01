@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: aa1a43623d36548e1b2f369b7d92b95f
+guid: ffd8ef23f69b64564a8bf2ee1f7b3b01
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6592175451231899610
-    second: Truck_Fix_0
+      213: -3589018894189000509
+    second: Titlescreen_raccoon_0
+  - first:
+      213: 4485266139464866560
+    second: Titlescreen_raccoon_1
+  - first:
+      213: -929977836469536893
+    second: Titlescreen_raccoon_2
+  - first:
+      213: 6910622808669181451
+    second: Titlescreen_raccoon_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -101,7 +110,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Truck_Fix_0
+      name: Titlescreen_raccoon_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 591
         y: 0
-        width: 1451
-        height: 1335
+        width: 586
+        height: 336
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,74 +137,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 620b54c9a53e384a0800000000000000
-      internalID: -6592175451231899610
+      spriteID: 3c803b7c45e313ec0800000000000000
+      internalID: -3589018894189000509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Truck_Fix_1
+      name: Titlescreen_raccoon_1
       rect:
         serializedVersion: 2
-        x: 1455
+        x: 1183
         y: 0
-        width: 1452
-        height: 1335
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 1, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0a73586cdda743eda087216e794c9eb
-      internalID: -993063177
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Truck_Fix_2
-      rect:
-        serializedVersion: 2
-        x: 2905
-        y: 0
-        width: 1455
-        height: 1335
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 3, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ac5376527d0b64c8ab9591ae69e616a7
-      internalID: 1113671609
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Truck_Fix_3
-      rect:
-        serializedVersion: 2
-        x: 4365
-        y: 0
-        width: 1449
-        height: 1335
+        width: 586
+        height: 336
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f820fb3d790284f5b9933c9741a56e37
-      internalID: -1273215033
+      spriteID: 00b14e53acdde3e30800000000000000
+      internalID: 4485266139464866560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Titlescreen_raccoon_2
+      rect:
+        serializedVersion: 2
+        x: 1775
+        y: 0
+        width: 586
+        height: 336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3873f30c51e0813f0800000000000000
+      internalID: -929977836469536893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Titlescreen_raccoon_3
+      rect:
+        serializedVersion: 2
+        x: 2375
+        y: 0
+        width: 585
+        height: 336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b06507794d677ef50800000000000000
+      internalID: 6910622808669181451
       vertices: []
       indices: 
       edges: []
@@ -204,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 38bbdeaf3df35495dba65d082c721f3c
+    spriteID: dd2eddda74adb4896b1fb1dd56e402db
     internalID: 0
     vertices: []
     indices: 
@@ -212,14 +221,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":1455.0,"y":1335.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      Truck_Fix_0: -6592175451231899610
-      Truck_Fix_1: -993063177
-      Truck_Fix_2: 1113671609
-      Truck_Fix_3: -1273215033
+      Titlescreen_raccoon_0: -3589018894189000509
+      Titlescreen_raccoon_1: 4485266139464866560
+      Titlescreen_raccoon_2: -929977836469536893
+      Titlescreen_raccoon_3: 6910622808669181451
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

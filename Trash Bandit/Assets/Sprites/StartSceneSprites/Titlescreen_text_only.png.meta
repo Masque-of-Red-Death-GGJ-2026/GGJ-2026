@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: aa1a43623d36548e1b2f369b7d92b95f
+guid: adf352240c2a24de2a2943a3ec2aa2f2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6592175451231899610
-    second: Truck_Fix_0
+      213: 987332087922163438
+    second: Titlescreen_text_only_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -101,7 +101,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,89 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Truck_Fix_0
+      name: Titlescreen_text_only_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1451
-        height: 1335
+        width: 2560
+        height: 1440
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 620b54c9a53e384a0800000000000000
-      internalID: -6592175451231899610
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Truck_Fix_1
-      rect:
-        serializedVersion: 2
-        x: 1455
-        y: 0
-        width: 1452
-        height: 1335
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 1, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0a73586cdda743eda087216e794c9eb
-      internalID: -993063177
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Truck_Fix_2
-      rect:
-        serializedVersion: 2
-        x: 2905
-        y: 0
-        width: 1455
-        height: 1335
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 3, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ac5376527d0b64c8ab9591ae69e616a7
-      internalID: 1113671609
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Truck_Fix_3
-      rect:
-        serializedVersion: 2
-        x: 4365
-        y: 0
-        width: 1449
-        height: 1335
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f820fb3d790284f5b9933c9741a56e37
-      internalID: -1273215033
+      spriteID: eeef1f78d45b3bd00800000000000000
+      internalID: 987332087922163438
       vertices: []
       indices: 
       edges: []
@@ -204,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 38bbdeaf3df35495dba65d082c721f3c
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -212,14 +146,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":1455.0,"y":1335.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      Truck_Fix_0: -6592175451231899610
-      Truck_Fix_1: -993063177
-      Truck_Fix_2: 1113671609
-      Truck_Fix_3: -1273215033
+      Titlescreen_text_only_0: 987332087922163438
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
