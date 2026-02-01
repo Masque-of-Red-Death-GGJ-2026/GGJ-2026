@@ -4,6 +4,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] PlayerMovement playerMovement;
+    [SerializeField] CatcherChase catcherChase;
     [SerializeField] GameOverScreenScript gameOverScreen;
     public int numberOfObstacles = 0;
     public bool moveWorld = true;
@@ -13,7 +14,7 @@ public class GameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        playerMovement.OnCatch += On_Catch;
+        catcherChase.OnCatch += On_Catch;
     }
 
     private void On_Catch(object sender, EventArgs e)

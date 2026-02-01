@@ -13,8 +13,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float jumpForce;
     [SerializeField] private float airAcceleration;
 
-    public EventHandler OnCatch;
-
     public EventHandler OnObstacleCollision;
 
     // Update is called once per frame
@@ -60,13 +58,13 @@ public class PlayerMovement : MonoBehaviour
         return collisioncast.collider;
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag("Chaser"))
-        {
-            OnCatch?.Invoke(this, EventArgs.Empty);
-        }
-    }
+    // private void OnCollisionEnter2D(Collision2D other)
+    // {
+    //     if (other.gameObject.CompareTag("Chaser"))
+    //     {
+    //         OnCatch?.Invoke(this, EventArgs.Empty);
+    //     }
+    // }
 
     void FixedUpdate()
     {
