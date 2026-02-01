@@ -1426,63 +1426,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31e50a09300f24ec6a9089af4414e943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInput
---- !u!1001 &1247150723
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 6186027827188374725, guid: 70aa811c2acaf5a48a981fd459052908, type: 3}
-      propertyPath: m_Name
-      value: Collectible
-      objectReference: {fileID: 0}
-    - target: {fileID: 8622978525630905162, guid: 70aa811c2acaf5a48a981fd459052908, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8622978525630905162, guid: 70aa811c2acaf5a48a981fd459052908, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8622978525630905162, guid: 70aa811c2acaf5a48a981fd459052908, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8622978525630905162, guid: 70aa811c2acaf5a48a981fd459052908, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8622978525630905162, guid: 70aa811c2acaf5a48a981fd459052908, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8622978525630905162, guid: 70aa811c2acaf5a48a981fd459052908, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8622978525630905162, guid: 70aa811c2acaf5a48a981fd459052908, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8622978525630905162, guid: 70aa811c2acaf5a48a981fd459052908, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8622978525630905162, guid: 70aa811c2acaf5a48a981fd459052908, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8622978525630905162, guid: 70aa811c2acaf5a48a981fd459052908, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 70aa811c2acaf5a48a981fd459052908, type: 3}
 --- !u!1 &1263604179
 GameObject:
   m_ObjectHideFlags: 0
@@ -1493,6 +1436,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1263604180}
   - component: {fileID: 1263604181}
+  - component: {fileID: 1263604182}
   m_Layer: 0
   m_Name: ObstacleSpawner
   m_TagString: Untagged
@@ -1530,6 +1474,21 @@ MonoBehaviour:
   gameManager: {fileID: 1668651803}
   gameObjectToSpawn: {fileID: 2212336813300051403, guid: 99c3ec0a58549da48bc195834e67473f, type: 3}
   maxNumberObstaclesAtOnce: 5
+  spawnCooldownMin: 0.3
+  spawnCooldownMax: 5
+--- !u!114 &1263604182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263604179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fed0494424dc5b84e85e54c2d1ddb537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnWorldObstacles
+  gameObjectToSpawn: {fileID: 6186027827188374725, guid: 70aa811c2acaf5a48a981fd459052908, type: 3}
   spawnCooldownMin: 0.3
   spawnCooldownMax: 5
 --- !u!1 &1347848954
@@ -2483,5 +2442,4 @@ SceneRoots:
   - {fileID: 1668651802}
   - {fileID: 1263604180}
   - {fileID: 393865139}
-  - {fileID: 1247150723}
   - {fileID: 696583929}
