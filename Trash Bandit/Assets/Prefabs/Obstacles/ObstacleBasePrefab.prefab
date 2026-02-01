@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 8540323754768495586}
   - component: {fileID: 5215401262765145638}
   - component: {fileID: 8397952698396670832}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ObstacleBasePrefab
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92,6 +92,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 134b839d67166b0478a5ad95274d4244, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyObstacleOutOfView
+  gameManager: {fileID: 0}
+  moveObstacleVector: {x: 5, y: 0}
+  target: {x: -11, y: 0}
+  speed: 60
 --- !u!1 &6758798825224101329
 GameObject:
   m_ObjectHideFlags: 0
@@ -102,7 +106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1856912660652446103}
   - component: {fileID: 1579256327776494565}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ObstacleSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

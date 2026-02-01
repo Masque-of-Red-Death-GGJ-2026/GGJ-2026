@@ -8,6 +8,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/StartScene.unity
+    guid: d94c10f119fa00940a648818489a5bdb
+  - enabled: 1
+    path: Assets/Scenes/CreditsScene.unity
+    guid: 428aa84ee3a52f1489d4ee275ca2b468
+  - enabled: 1
+    path: Assets/Scenes/ControlsScene.unity
+    guid: a28f21a9aa781104e9e1372ce2bfaa39
+  - enabled: 0
+    path: Assets/Scenes/ChaserScene.unity
+    guid: 15309b3e095784c82b398c61a7d8bbac
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
