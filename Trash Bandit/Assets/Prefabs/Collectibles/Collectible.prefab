@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 2939819975366079873}
   m_Layer: 0
   m_Name: Collectible
-  m_TagString: Untagged
+  m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -184,3 +184,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollectibleController
   gameManager: {fileID: 0}
+  moveObstacleVector: {x: 5, y: 0}
+  target: {x: -11, y: 0}

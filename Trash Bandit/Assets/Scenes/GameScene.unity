@@ -1803,9 +1803,11 @@ MonoBehaviour:
   gameOverScreen: {fileID: 393865135}
   GameWinScreen: {fileID: 1527014257}
   winningScore: 10
+  player: {fileID: 921030303}
   currentScore: 0
   numberOfObstacles: 0
   moveWorld: 1
+  gameOver: 0
   GameScoreTextUI: {fileID: 1866985517}
 --- !u!1 &1684228198
 GameObject:
