@@ -770,7 +770,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 3
   m_AngularDamping: 0.05
-  m_GravityScale: 2
+  m_GravityScale: 4
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -799,7 +799,7 @@ MonoBehaviour:
   collider: {fileID: 921030305}
   groundAcceleration: 50
   playerMaxVelocity: 10
-  jumpForce: 15
+  jumpForce: 30
   airAcceleration: 25
 --- !u!114 &921030308
 MonoBehaviour:
