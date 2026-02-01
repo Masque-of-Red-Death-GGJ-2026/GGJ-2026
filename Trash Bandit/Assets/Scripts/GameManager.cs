@@ -78,7 +78,10 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         // Check if game is won each frame:
-        CheckWinCondition();
+        if (!gameOver)
+        {
+            CheckWinCondition();
+        }
 
         if (playerMovement.CheckCollision())
         {

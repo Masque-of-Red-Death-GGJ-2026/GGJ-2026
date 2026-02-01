@@ -2,9 +2,10 @@ using UnityEngine;
 
 public class MusicManager : MonoBehaviour
 {
-    [SerializeField] AudioSource gameOver;
+    [SerializeField] AudioClip gameOver;
     [SerializeField] AudioSource gameMusic;
-    [SerializeField] AudioSource gameWin;
+    
+    [SerializeField] AudioClip gameWin;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,13 +20,18 @@ public class MusicManager : MonoBehaviour
 
     public void playWin()
     {
+        Debug.Log("Game Win");
         gameMusic.Pause();
-        gameWin.Play();
+        gameMusic.loop = false;
+        gameMusic.clip = gameWin;
+        gameMusic.Play();
     }
 
     public void playGameOver()
     {
         gameMusic.Pause();
-        gameOver.Play();
+        gameMusic.loop = false;
+        gameMusic.clip = gameOver;
+        gameMusic.Play();
     }
 }
