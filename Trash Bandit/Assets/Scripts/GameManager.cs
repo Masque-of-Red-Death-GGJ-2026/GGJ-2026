@@ -10,11 +10,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject GameWinScreen;
     [SerializeField] int winningScore = 10;
     [SerializeField] GameObject player;
+    [SerializeField] MusicManager musicManager;
     public int currentScore = 0;
     public int numberOfObstacles = 0;
     public bool moveWorld = true;
     public bool gameOver = false;
     public TextMeshProUGUI GameScoreTextUI;
+    
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -30,6 +32,7 @@ public class GameManager : MonoBehaviour
         gameOver = true;
         GameOver();
         gameOverScreen.ShowGameOver();
+        musicManager.playGameOver();
     }
 
     private void On_Obstacle_Collision(object sender, EventArgs e)
@@ -46,6 +49,7 @@ public class GameManager : MonoBehaviour
             gameOver = true;
             GameOver();
             GameWinScreen.SetActive(true);
+            musicManager.playWin();
         }
     }
 

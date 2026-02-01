@@ -2210,7 +2210,8 @@ MonoBehaviour:
   gameOverScreen: {fileID: 393865135}
   GameWinScreen: {fileID: 1527014257}
   winningScore: 10
-  player: {fileID: 921030303}
+  player: {fileID: 0}
+  musicManager: {fileID: 0}
   currentScore: 0
   numberOfObstacles: 0
   moveWorld: 1
@@ -3025,3 +3026,4 @@ SceneRoots:
   - {fileID: 1263604180}
   - {fileID: 393865139}
   - {fileID: 696583929}
+  - {fileID: 283920653}
