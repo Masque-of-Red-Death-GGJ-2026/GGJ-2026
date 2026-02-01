@@ -5,7 +5,7 @@ public class DestroyObstacleOutOfView : MonoBehaviour
     [SerializeField] private GameManager gameManager;
     [SerializeField] Vector2 moveObstacleVector = new Vector2(5.0f, 0.0f);
     [SerializeField] Vector2 target = new Vector2(-11.0f, 0.0f);
-    [SerializeField] float speed;
+    private float speed = 5;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -18,7 +18,7 @@ public class DestroyObstacleOutOfView : MonoBehaviour
     {
         // Move towards player:
         float step = 1.0f * Time.deltaTime;
-        transform.Translate(new Vector3(-1, 0) * speed * Time.deltaTime);
+        transform.position += new Vector3(-1, 0) * speed * Time.deltaTime;
 
         // If object out of view, destroy:
         if (gameObject.transform.position.x <= -11)

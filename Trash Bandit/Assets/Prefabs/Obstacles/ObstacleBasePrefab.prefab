@@ -95,7 +95,7 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   moveObstacleVector: {x: 5, y: 0}
   target: {x: -11, y: 0}
-  speed: 60
+  speed: 5
 --- !u!1 &6758798825224101329
 GameObject:
   m_ObjectHideFlags: 0
