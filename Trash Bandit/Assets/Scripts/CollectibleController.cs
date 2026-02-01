@@ -6,11 +6,13 @@ public class CollectibleController : MonoBehaviour
     [SerializeField] Vector2 moveObstacleVector = new Vector2(5.0f, 0.0f);
     [SerializeField] Vector2 target = new Vector2(-11.0f, 0.0f);
     private float speed = 5;
+    [SerializeField] Sprite[] sprites;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
+        gameObject.GetComponentInChildren<SpriteRenderer>().sprite = sprites[Random.Range(0, sprites.Length)];
     }
 
     // Update is called once per frame

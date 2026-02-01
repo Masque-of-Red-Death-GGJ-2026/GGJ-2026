@@ -2,6 +2,7 @@ using System;
 using Unity.Mathematics.Geometry;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -12,6 +13,12 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float playerMaxVelocity;
     [SerializeField] float jumpForce;
     [SerializeField] private float airAcceleration;
+    [SerializeField] Animator animator;
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] private AudioClip[] eatSounds;
+
+    private float jumpSkipFramesTimer;
+    private bool jumpReadyToCheckGround;
 
     public EventHandler OnObstacleCollision;
 
@@ -26,12 +33,30 @@ public class PlayerMovement : MonoBehaviour
         if (CheckGrounded())
         {
             rb.AddForce(new Vector2(0, 1) * jumpForce, ForceMode2D.Impulse);
+            animator.SetBool("Jumping", true);
+            jumpReadyToCheckGround = false;
+            jumpSkipFramesTimer = 0.3f;
         }
     }
 
     private void Update()
     {
-        
+        if (jumpSkipFramesTimer > 0)
+        {
+            jumpSkipFramesTimer -= Time.deltaTime;
+        }
+        else
+        {
+            jumpReadyToCheckGround = true;
+        }
+        if (CheckGrounded() && jumpReadyToCheckGround)
+        {
+            animator.SetBool("Jumping", false);
+        }
+        // if (CheckGrounded())
+        // {
+        //     animator.SetBool("Jumping", false);
+        // }
     }
 
     bool CheckGrounded()
@@ -65,6 +90,16 @@ public class PlayerMovement : MonoBehaviour
     //         OnCatch?.Invoke(this, EventArgs.Empty);
     //     }
     // }
+    
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.CompareTag("Collectible"))
+        {
+            // Add points via GameManager:
+            audioSource.clip = eatSounds[Random.Range(0, eatSounds.Length)];
+            audioSource.Play();
+        }
+    }
 
     void FixedUpdate()
     {

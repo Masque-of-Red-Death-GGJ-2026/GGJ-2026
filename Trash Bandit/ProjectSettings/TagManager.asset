@@ -8,6 +8,7 @@ TagManager:
   - Obstacle
   - Chaser
   - Collectible
+  - Undefined
   layers:
   - Default
   - TransparentFX
@@ -53,6 +54,9 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 1947616219
+    locked: 0
+  - name: Foreground
+    uniqueID: 3147379351
     locked: 0
   m_RenderingLayers:
   - Default
