@@ -1224,7 +1224,7 @@ MonoBehaviour:
   gameManager: {fileID: 1668651803}
   gameObjectToSpawn: {fileID: 2212336813300051403, guid: 99c3ec0a58549da48bc195834e67473f, type: 3}
   maxNumberObstaclesAtOnce: 5
-  spawnCooldownMin: 3
+  spawnCooldownMin: 2
   spawnCooldownMax: 5
 --- !u!1 &1639569382
 GameObject:
