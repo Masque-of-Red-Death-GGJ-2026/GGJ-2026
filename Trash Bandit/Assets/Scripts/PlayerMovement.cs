@@ -42,11 +42,6 @@ public class PlayerMovement : MonoBehaviour
             collider.bounds.center.x,
             collider.bounds.center.y - collider.bounds.extents.y
         );
-
-        Vector2 rightCenter = new Vector2(
-            collider.bounds.center.x + collider.bounds.extents.x,
-            collider.bounds.center.y
-        );
         
         var boxHeight = 0.5f;
         var raycast = Physics2D.BoxCast(bottomCenter, new Vector2(collider.bounds.size.x, boxHeight), 0, Vector2.down, 0f, LayerMask.GetMask("Platform"));
