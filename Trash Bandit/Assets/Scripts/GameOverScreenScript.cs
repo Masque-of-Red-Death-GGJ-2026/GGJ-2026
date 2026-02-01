@@ -1,9 +1,10 @@
 using NUnit.Framework.Constraints;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameOverScreenScript : MonoBehaviour
 {
-    public GameObject GameOverScreen;
+    [SerializeField] GameObject GameOverScreen;
 
     //When game starts game over screen is not visable
     private void Awake()
@@ -16,9 +17,15 @@ public class GameOverScreenScript : MonoBehaviour
         GameOverScreen.SetActive(true);
     }
 
-    // Update is called once per frame
-    void Update()
+    // Function called on main menu button click:
+    public void ToMainMenu()
     {
-    
+        SceneManager.LoadScene("StartScene");
+    }
+
+    // Function called on restart button click:
+    public void RestartGame()
+    {
+        SceneManager.LoadScene("GameScene");
     }
 }

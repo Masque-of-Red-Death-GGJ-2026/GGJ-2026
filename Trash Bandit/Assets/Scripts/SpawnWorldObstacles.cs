@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SpawnWorldObstacles : MonoBehaviour
 {
-    // [SerializeField] private GameManager gameManager;
+    [SerializeField] private GameManager gameManager;
     [SerializeField] GameObject gameObjectToSpawn;
     private float spawnCooldownTimer = 0;
     [SerializeField] float spawnCooldownMin;
@@ -33,8 +33,11 @@ public class SpawnWorldObstacles : MonoBehaviour
 
     void SpawnObject()
     {
-        // https://docs.unity3d.com/6000.3/Documentation/ScriptReference/Object.Instantiate.html
-        Instantiate(gameObjectToSpawn, transform.position, Quaternion.identity); 
-        spawnCooldownTimer = RandomizeSpawnTimer(spawnCooldownMin, spawnCooldownMax);
+        if (gameManager.gameOver == false)
+        {
+            // https://docs.unity3d.com/6000.3/Documentation/ScriptReference/Object.Instantiate.html
+            Instantiate(gameObjectToSpawn, transform.position, Quaternion.identity); 
+            spawnCooldownTimer = RandomizeSpawnTimer(spawnCooldownMin, spawnCooldownMax);
+        }
     }
 }

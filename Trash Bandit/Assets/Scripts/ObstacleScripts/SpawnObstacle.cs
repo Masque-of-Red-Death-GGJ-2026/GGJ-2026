@@ -53,9 +53,11 @@ public class SpawnObstacle : MonoBehaviour
 
     void SpawnObject()
     {
-        // https://docs.unity3d.com/6000.3/Documentation/ScriptReference/Object.Instantiate.html
-        
-        Instantiate(gameObjectsToSpawn[RandomizeObject()], transform.position, Quaternion.identity); 
-        spawnCooldownTimer = RandomizeSpawnTimer(spawnCooldownMin, spawnCooldownMax);
+        if (gameManager.gameOver == false)
+        {
+            // https://docs.unity3d.com/6000.3/Documentation/ScriptReference/Object.Instantiate.html
+            Instantiate(gameObjectsToSpawn[RandomizeObject()], transform.position, Quaternion.identity); 
+            spawnCooldownTimer = RandomizeSpawnTimer(spawnCooldownMin, spawnCooldownMax);
+        }
     }
 }
