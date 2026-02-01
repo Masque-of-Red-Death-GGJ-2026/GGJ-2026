@@ -2165,6 +2165,11 @@ MonoBehaviour:
   airAcceleration: 25
   animator: {fileID: 1684228201}
   audioSource: {fileID: 921030309}
+  eatSounds:
+  - {fileID: 8300000, guid: 1f90b5a3f966d4b71b37e1b2002640d2, type: 3}
+  - {fileID: 8300000, guid: feb406e3e1a02436fbd1e4b04e6609f4, type: 3}
+  - {fileID: 8300000, guid: dee8fff15b05c4149ad861aa3e1bba57, type: 3}
+  - {fileID: 8300000, guid: 8c4e9f34ee02a495daba66f25df2a4b8, type: 3}
 --- !u!114 &921030308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2188,7 +2193,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 1f90b5a3f966d4b71b37e1b2002640d2, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
