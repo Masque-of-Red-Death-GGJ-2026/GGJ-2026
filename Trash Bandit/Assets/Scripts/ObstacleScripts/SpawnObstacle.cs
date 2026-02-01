@@ -15,7 +15,7 @@ public class SpawnObstacle : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        spawnCooldownTimer = RandomizeSpawnTimer(spawnCooldownMin, spawnCooldownMax);
+        
     }
 
     // Update is called once per frame
