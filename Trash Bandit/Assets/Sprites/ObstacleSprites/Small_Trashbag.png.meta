@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 03db7703149604be08133e23dc8b1433
+guid: 613def6998ad948a0b6155d583a0390e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5222289011492185491
-    second: trashcan_no_lid_0
+      213: 1208795532672121839
+    second: Small_Trashbag_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: trashcan_no_lid_0
+      name: Small_Trashbag_0
       rect:
         serializedVersion: 2
-        x: 526
-        y: 154
-        width: 1087
-        height: 1273
+        x: 0
+        y: 0
+        width: 930
+        height: 837
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d6a159b10d3b687b0800000000000000
-      internalID: -5222289011492185491
+      spriteID: feb300be12186c010800000000000000
+      internalID: 1208795532672121839
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      trashcan_no_lid_0: -5222289011492185491
+      Small_Trashbag_0: 1208795532672121839
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
