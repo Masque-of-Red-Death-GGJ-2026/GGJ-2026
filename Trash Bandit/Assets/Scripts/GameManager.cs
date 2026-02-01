@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        // catcherChase.OnCatch += On_Catch;
+        catcherChase.OnCatch += On_Catch;
     }
 
     private void On_Catch(object sender, EventArgs e)

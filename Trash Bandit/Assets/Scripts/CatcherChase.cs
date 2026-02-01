@@ -16,6 +16,7 @@ public class CatcherChase : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log(other.gameObject.name);
         if (other.gameObject.tag == "Player")
         {
             OnCatch?.Invoke(this, EventArgs.Empty);

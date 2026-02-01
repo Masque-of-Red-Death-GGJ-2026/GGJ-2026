@@ -772,6 +772,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &589722220 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8665568065313157418, guid: 1d38122350d604374a9e00a6725f4bfe, type: 3}
+  m_PrefabInstance: {fileID: 231421432}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589722215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ef42ee440b4489880607b20b80a7a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CatcherChase
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -809,7 +820,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 0000000069a3431cdb431674
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -941,7 +952,7 @@ Transform:
   m_GameObject: {fileID: 696583927}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.84, z: 0}
+  m_LocalPosition: {x: 0, y: -3.84, z: 10}
   m_LocalScale: {x: 2.3, y: 2.3, z: 2.3}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1472,7 +1483,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpawnObstacle
   gameManager: {fileID: 1668651803}
-  gameObjectToSpawn: {fileID: 2212336813300051403, guid: 99c3ec0a58549da48bc195834e67473f, type: 3}
+  gameObjectsToSpawn:
+  - {fileID: 2212336813300051403, guid: 99c3ec0a58549da48bc195834e67473f, type: 3}
+  - {fileID: 3590263721085491783, guid: 683fd74da55a04655b297bb8f7d5a1d8, type: 3}
   maxNumberObstaclesAtOnce: 5
   spawnCooldownMin: 0.3
   spawnCooldownMax: 5
@@ -1734,7 +1747,7 @@ Transform:
   m_GameObject: {fileID: 1639569382}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.5, z: 0}
+  m_LocalPosition: {x: 0, y: -2.5, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1786,7 +1799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   playerMovement: {fileID: 921030307}
-  catcherChase: {fileID: 0}
+  catcherChase: {fileID: 589722220}
   gameOverScreen: {fileID: 393865135}
   GameWinScreen: {fileID: 1527014257}
   winningScore: 10
@@ -1804,6 +1817,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1684228199}
   - component: {fileID: 1684228200}
+  - component: {fileID: 1684228201}
   m_Layer: 0
   m_Name: Player Sprite
   m_TagString: Untagged
@@ -1871,8 +1885,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1947616219
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3523461674454734936, guid: 32c880984e00b304aa7ef62e98ad3de3, type: 3}
@@ -1885,6 +1899,28 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!95 &1684228201
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684228198}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 89b11ac8febc549fcb1ea718e40b0a3e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1792262355
 GameObject:
   m_ObjectHideFlags: 0

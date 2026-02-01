@@ -3,7 +3,7 @@ using UnityEngine;
 public class SpawnObstacle : MonoBehaviour
 {
     [SerializeField] private GameManager gameManager;
-    [SerializeField] GameObject gameObjectToSpawn;
+    [SerializeField] GameObject[] gameObjectsToSpawn;
     [SerializeField] int maxNumberObstaclesAtOnce = 5;
     private string obstacleTag = "Obstacle";
     private int obstaclesAdded = 0;
@@ -46,10 +46,16 @@ public class SpawnObstacle : MonoBehaviour
         return Random.Range(min, max);
     }
 
+    int RandomizeObject()
+    {
+        return Random.Range(0, gameObjectsToSpawn.Length);
+    }
+
     void SpawnObject()
     {
         // https://docs.unity3d.com/6000.3/Documentation/ScriptReference/Object.Instantiate.html
-        Instantiate(gameObjectToSpawn, transform.position, Quaternion.identity); 
+        
+        Instantiate(gameObjectsToSpawn[RandomizeObject()], transform.position, Quaternion.identity); 
         spawnCooldownTimer = RandomizeSpawnTimer(spawnCooldownMin, spawnCooldownMax);
     }
 }
