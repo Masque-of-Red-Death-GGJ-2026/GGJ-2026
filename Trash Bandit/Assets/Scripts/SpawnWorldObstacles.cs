@@ -33,11 +33,25 @@ public class SpawnWorldObstacles : MonoBehaviour
 
     void SpawnObject()
     {
-        if (gameManager.gameOver == false)
+        // Get each obstacle currently in game:
+        foreach (GameObject obstacle in GameObject.FindGameObjectsWithTag("Obstacle"))
         {
-            // https://docs.unity3d.com/6000.3/Documentation/ScriptReference/Object.Instantiate.html
-            Instantiate(gameObjectToSpawn, transform.position, Quaternion.identity); 
-            spawnCooldownTimer = RandomizeSpawnTimer(spawnCooldownMin, spawnCooldownMax);
+            // If obstacle not at spawn location and game not over, spawn collectible:
+            if (!(gameObject.transform.position.x == obstacle.transform.position.x) && gameManager.gameOver == false)
+            {
+                // https://docs.unity3d.com/6000.3/Documentation/ScriptReference/Object.Instantiate.html
+                Instantiate(gameObjectToSpawn, transform.position, Quaternion.identity);
+                spawnCooldownTimer = RandomizeSpawnTimer(spawnCooldownMin, spawnCooldownMax);
+            } 
+            else
+            {
+                // This spawn position allows some randomness for distance between spawned collectibles:
+                Vector2 spawnPosition = new Vector2(transform.position.x + Random.Range(0.0f, 0.005f), transform.position.y);
+
+                // https://docs.unity3d.com/6000.3/Documentation/ScriptReference/Object.Instantiate.html
+                Instantiate(gameObjectToSpawn, spawnPosition, Quaternion.identity);
+                spawnCooldownTimer = RandomizeSpawnTimer(spawnCooldownMin, spawnCooldownMax);
+            }
         }
     }
 }
