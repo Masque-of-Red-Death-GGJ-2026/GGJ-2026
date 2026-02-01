@@ -4,6 +4,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] PlayerMovement playerMovement;
+    public int numberOfObstacles = 0;
     public bool moveWorld = true;
     
     

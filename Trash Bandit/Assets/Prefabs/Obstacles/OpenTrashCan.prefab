@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 2283378617717099297}
   - component: {fileID: 4906663038110822389}
   - component: {fileID: 4079087762480639833}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: OpenTrashCan
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,7 +102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8825823164634106389}
   - component: {fileID: 2603642549315816277}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ObstacleSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -5222289011492185491, guid: 84fd63c6201558d47a4cb3683eae4c85, type: 3}
+  m_Sprite: {fileID: -5222289011492185491, guid: 03db7703149604be08133e23dc8b1433, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
