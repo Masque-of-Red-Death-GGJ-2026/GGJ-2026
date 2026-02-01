@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 36dbf148ef82f4f44b169f769997e78a
+guid: 26dd4d9c7066d4463aa225f84c89bfae
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -129082438420644533
-    second: Construction_Cone_0
+      213: -1134441375532829494
+    second: Sidewalk_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Construction_Cone_0
+      name: Sidewalk_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 837
-        height: 1240
+        width: 1536
+        height: 330
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b4d3237c438653ef0800000000000000
-      internalID: -129082438420644533
+      spriteID: ac43cd85497a140f0800000000000000
+      internalID: -1134441375532829494
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Construction_Cone_0: -129082438420644533
+      Sidewalk_0: -1134441375532829494
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
