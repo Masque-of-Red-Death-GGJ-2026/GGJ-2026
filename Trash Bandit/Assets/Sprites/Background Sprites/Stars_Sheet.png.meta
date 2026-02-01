@@ -1,0 +1,395 @@
+fileFormatVersion: 2
+guid: 1bd1ce47137fc4ae3b054fada1507ec4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5755615035298133982
+    second: Stars_Sheet_0
+  - first:
+      213: 8127161883005745350
+    second: Stars_Sheet_1
+  - first:
+      213: -7271854212066469501
+    second: Stars_Sheet_2
+  - first:
+      213: -393443985767765073
+    second: Stars_Sheet_3
+  - first:
+      213: 8865833215953534603
+    second: Stars_Sheet_4
+  - first:
+      213: 8237468431335446133
+    second: Stars_Sheet_5
+  - first:
+      213: 7621059780375002929
+    second: Stars_Sheet_6
+  - first:
+      213: -7203931253278804706
+    second: Stars_Sheet_7
+  - first:
+      213: -8908110034134938482
+    second: Stars_Sheet_8
+  - first:
+      213: -6984653146414204711
+    second: Stars_Sheet_9
+  - first:
+      213: 960916264250039639
+    second: Stars_Sheet_10
+  - first:
+      213: -2366034702731506953
+    second: Stars_Sheet_11
+  - first:
+      213: 9032059724284729031
+    second: Stars_Sheet_12
+  - first:
+      213: 8167006965441426956
+    second: Stars_Sheet_13
+  - first:
+      213: -1083306892122305852
+    second: Stars_Sheet_14
+  - first:
+      213: 8532391012455983967
+    second: Stars_Sheet_15
+  - first:
+      213: -6408161965445127249
+    second: Stars_Sheet_16
+  - first:
+      213: -4597091107373545642
+    second: Stars_Sheet_17
+  - first:
+      213: 7412801925326223857
+    second: Stars_Sheet_18
+  - first:
+      213: 8064512278393142381
+    second: Stars_Sheet_19
+  - first:
+      213: 7216765455452770686
+    second: Stars_Sheet_20
+  - first:
+      213: -1819621421881871820
+    second: Stars_Sheet_21
+  - first:
+      213: -6130940129655021482
+    second: Stars_Sheet_22
+  - first:
+      213: 5668104901264726776
+    second: Stars_Sheet_23
+  - first:
+      213: 64457648137348522
+    second: Stars_Sheet_24
+  - first:
+      213: -1608139624773815153
+    second: Stars_Sheet_25
+  - first:
+      213: 5171250204106290724
+    second: Stars_Sheet_26
+  - first:
+      213: -5733712277555825799
+    second: Stars_Sheet_27
+  - first:
+      213: 2523278915775609166
+    second: Stars_Sheet_28
+  - first:
+      213: -5506076554513560769
+    second: Stars_Sheet_29
+  - first:
+      213: 9058056624660904368
+    second: Stars_Sheet_30
+  - first:
+      213: -7199167735166073475
+    second: Stars_Sheet_31
+  - first:
+      213: 928084917724522447
+    second: Stars_Sheet_32
+  - first:
+      213: 1978982578081432261
+    second: Stars_Sheet_33
+  - first:
+      213: -3451578596328070949
+    second: Stars_Sheet_34
+  - first:
+      213: -8960694460797254312
+    second: Stars_Sheet_35
+  - first:
+      213: -2543581992991570256
+    second: Stars_Sheet_36
+  - first:
+      213: -1877344597236508421
+    second: Stars_Sheet_37
+  - first:
+      213: 4100096669321153542
+    second: Stars_Sheet_38
+  - first:
+      213: -1501000282569112706
+    second: Stars_Sheet_39
+  - first:
+      213: 6792192641615294156
+    second: Stars_Sheet_40
+  - first:
+      213: 7233613181484877499
+    second: Stars_Sheet_41
+  - first:
+      213: -6506430151921391987
+    second: Stars_Sheet_42
+  - first:
+      213: -7141715453413596035
+    second: Stars_Sheet_43
+  - first:
+      213: 1652423281224438379
+    second: Stars_Sheet_44
+  - first:
+      213: 7052082521539032641
+    second: Stars_Sheet_45
+  - first:
+      213: -3128255524970717257
+    second: Stars_Sheet_46
+  - first:
+      213: 2820755703146147116
+    second: Stars_Sheet_47
+  - first:
+      213: 597027383400779383
+    second: Stars_Sheet_48
+  - first:
+      213: 4372770274356613842
+    second: Stars_Sheet_49
+  - first:
+      213: -6961754905269929946
+    second: Stars_Sheet_50
+  - first:
+      213: -6046392857369948126
+    second: Stars_Sheet_51
+  - first:
+      213: -8461826113864183159
+    second: Stars_Sheet_52
+  - first:
+      213: 6952295810601461280
+    second: Stars_Sheet_53
+  - first:
+      213: 6912178036746940320
+    second: Stars_Sheet_54
+  - first:
+      213: -3289482978787842963
+    second: Stars_Sheet_55
+  - first:
+      213: 8365821986200329600
+    second: Stars_Sheet_56
+  - first:
+      213: -5441824804355141251
+    second: Stars_Sheet_57
+  - first:
+      213: -5777639510574515234
+    second: Stars_Sheet_58
+  - first:
+      213: -7680219520330989976
+    second: Stars_Sheet_59
+  - first:
+      213: 8713638802960796201
+    second: Stars_Sheet_60
+  - first:
+      213: 4738908516567101423
+    second: Stars_Sheet_61
+  - first:
+      213: 1377017570120861432
+    second: Stars_Sheet_62
+  - first:
+      213: -8144322748122939785
+    second: Stars_Sheet_63
+  - first:
+      213: -618856388038174964
+    second: Stars_Sheet_64
+  - first:
+      213: 2470684681615829741
+    second: Stars_Sheet_65
+  - first:
+      213: 3527063579185148474
+    second: Stars_Sheet_66
+  - first:
+      213: -279782680894543481
+    second: Stars_Sheet_67
+  - first:
+      213: 6083441987732511979
+    second: Stars_Sheet_68
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Stars_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 0
+        width: 1562
+        height: 884
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed7b7da416d00ef40800000000000000
+      internalID: 5755615035298133982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 0
+        width: 1562
+        height: 884
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c8f6ac4caa79c070800000000000000
+      internalID: 8127161883005745350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 3124
+        y: 0
+        width: 1562
+        height: 884
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 389995f3f1f251b90800000000000000
+      internalID: -7271854212066469501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b14c1ee3ed0d44a01b30e653cb93901a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":1.0},"gridSpriteSize":{"x":1562.0,"y":884.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Stars_Sheet_0: 5755615035298133982
+      Stars_Sheet_1: 8127161883005745350
+      Stars_Sheet_2: -7271854212066469501
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
