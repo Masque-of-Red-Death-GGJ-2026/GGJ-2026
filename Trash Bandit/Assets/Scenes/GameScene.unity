@@ -2378,6 +2378,7 @@ MonoBehaviour:
   - {fileID: 2212336813300051403, guid: 99c3ec0a58549da48bc195834e67473f, type: 3}
   - {fileID: 3590263721085491783, guid: 683fd74da55a04655b297bb8f7d5a1d8, type: 3}
   - {fileID: 3590263721085491783, guid: 20112b0757f034be78952ecf38068cf9, type: 3}
+  - {fileID: 3590263721085491783, guid: 2e6d5bc015120614a988a4b7f67076b9, type: 3}
   maxNumberObstaclesAtOnce: 5
   spawnCooldownMin: 0.3
   spawnCooldownMax: 5
