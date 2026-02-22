@@ -1,9 +1,18 @@
 using System;
 using UnityEngine;
 using TMPro;
+using System.Runtime.InteropServices;
 
 public class GameManager : MonoBehaviour
 {
+    public enum GameState
+    {
+        GameOver,
+        Level0,
+        Level1,
+        Level2,
+        Level3
+    }
     [SerializeField] PlayerMovement playerMovement;
     [SerializeField] CatcherChase catcherChase;
     [SerializeField] GameOverScreenScript gameOverScreen;
@@ -17,6 +26,7 @@ public class GameManager : MonoBehaviour
     public bool gameOver = false;
     public TextMeshProUGUI GameScoreTextUI;
     [SerializeField] GameObject gameOverGraphic;
+    GameState gameState = GameState.Level0;
     
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -26,6 +36,23 @@ public class GameManager : MonoBehaviour
         
         // Hide cursor while playing game:
         Cursor.visible = false;
+    }
+
+    void Update()
+    {
+        switch(gameState)
+        {
+            case GameState.GameOver:
+                break;
+            case GameState.Level0:
+                break;
+            case GameState.Level1:
+                break;
+            case GameState.Level2:
+                break;
+            case GameState.Level3:
+                break;
+        }
     }
 
     private void On_Catch(object sender, EventArgs e)
