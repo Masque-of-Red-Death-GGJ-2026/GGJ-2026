@@ -9,7 +9,7 @@ public class MoveHouse : MonoBehaviour
 
     private int DestroyHouseXPos = -60;
 
-    void Uodate()
+    void Update()
     {
         transform.position += new Vector3(-1, 0) * speed * parallaxFactor * Time.deltaTime;
 
