@@ -7,7 +7,7 @@ public class MoveHouse : MonoBehaviour
 
     [HideInInspector] public HouseSpawner spawner;
 
-    private int DestroyHouseXPos = -60;
+    private int DestroyHouseXPos = -15;
 
     void Update()
     {

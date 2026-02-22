@@ -7,34 +7,40 @@ public class HouseSpawner : MonoBehaviour
     //spawn settings
     public int numOfHouses = 1;
     public float spawnX = 20f;
-    public float spawnY = -0.6f;
 
     void Start()
     {
-        SpawnHouse();
-        numOfHouses++;
+        SpawnHouseAt(Camera.main.transform.position.x + 8f);
+        SpawnHouseAt(Camera.main.transform.position.x + 16f);
+        SpawnHouseAt(Camera.main.transform.position.x + 24f);
+        numOfHouses = 3;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(numOfHouses <= 1)
+        if(numOfHouses <= 2)
         {
             SpawnHouse();
             numOfHouses++;
         }
     }
 
-    private void SpawnHouse()
+    private void SpawnHouseAt(float xPos)
     {
         int randomIndex = Random.Range(0, housePrefabs.Length);
         GameObject newHouse = Instantiate(
             housePrefabs[randomIndex],
-            new Vector3(Camera.main.transform.position.x +spawnX, spawnY, 2f),
+            new Vector3(xPos, transform.position.y, 0f),
             Quaternion.identity
         );
 
         newHouse.GetComponent<MoveHouse>().spawner = this;
+    }
+
+    private void SpawnHouse()
+    {
+        SpawnHouseAt(Camera.main.transform.position.x + spawnX);
     }
 
 }
