@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1703926372338127272}
   - component: {fileID: 6156919867119748009}
+  - component: {fileID: 848804605306682035}
   m_Layer: 0
   m_Name: House_2
   m_TagString: Untagged
@@ -91,3 +92,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &848804605306682035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8341942027995185521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e9aae2b83fff4715b6997a387d144e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MoveHouse
+  moveSpeed: 5
+  parallaxFactor: 0.7
+  spawner: {fileID: 0}
