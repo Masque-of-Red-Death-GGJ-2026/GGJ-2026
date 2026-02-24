@@ -102,6 +102,7 @@ InitTestScene*.unity*
 # Custom ignore files:
 ../.DS_Store
 .DS_Store
+*.DS_Store
 .idea
 Assets/TextMesh Pro
 Assets/TextMesh Pro.meta
