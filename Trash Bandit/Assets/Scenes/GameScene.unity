@@ -1992,10 +1992,7 @@ MonoBehaviour:
   playerInput: {fileID: 921030308}
   rb: {fileID: 921030306}
   collider: {fileID: 921030305}
-  groundAcceleration: 50
-  playerMaxVelocity: 10
   jumpForce: 30
-  airAcceleration: 25
   animator: {fileID: 1684228201}
   audioSource: {fileID: 921030309}
   eatSounds:
