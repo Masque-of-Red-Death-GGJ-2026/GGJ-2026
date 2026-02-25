@@ -12,6 +12,12 @@ public class SpawnObstacle : MonoBehaviour
     [SerializeField] float spawnCooldownMin;
     [SerializeField] float spawnCooldownMax;
 
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -24,6 +30,15 @@ public class SpawnObstacle : MonoBehaviour
         {
             SpawnObject();
         }
+        
+        
+        // if (gameManager.numberOfObstacles < maxNumberObstaclesAtOnce)
+        // {
+        //     Debug.Log("Spawning thing!");
+        //     SpawnObject();
+        //     obstaclesAdded++;
+        //     gameManager.numberOfObstacles += 1;
+        // }
     }
 
     float RandomizeSpawnTimer(float min, float max)
