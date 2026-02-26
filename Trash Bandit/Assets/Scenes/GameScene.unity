@@ -2004,7 +2004,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   playerInput: {fileID: 921030308}
   rb: {fileID: 921030306}
-  collider: {fileID: 921030305}
+  playerCollider: {fileID: 921030305}
   jumpForce: 30
   animator: {fileID: 1684228201}
   audioSource: {fileID: 921030309}
