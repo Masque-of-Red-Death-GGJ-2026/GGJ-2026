@@ -23,7 +23,7 @@ public class DestroyObstacleOutOfView : MonoBehaviour
             case GameManager.GameState.GameWon:
                 return 0;
             default:
-                return 0;
+                return 1;
         }
     }
 
