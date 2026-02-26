@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class CollectibleController : MonoBehaviour
 {
-    [SerializeField] private GameManager gameManager;
     [SerializeField] Vector2 moveObstacleVector = new Vector2(5.0f, 0.0f);
     [SerializeField] Vector2 target = new Vector2(-11.0f, 0.0f);
     private float speed = 5;
@@ -11,7 +10,7 @@ public class CollectibleController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        gameManager = FindObjectOfType<GameManager>();
+        //gameManager = FindObjectOfType<GameManager>();
         gameObject.GetComponentInChildren<SpriteRenderer>().sprite = sprites[Random.Range(0, sprites.Length)];
     }
 
@@ -43,8 +42,8 @@ public class CollectibleController : MonoBehaviour
         if (col.CompareTag("Player"))
         {
             // Add points via GameManager:
-            gameManager.currentScore++;
-            gameManager.GameScoreTextUI.text = gameManager.currentScore.ToString();
+            GameManager.Instance.currentScore++;
+            GameManager.Instance.GameScoreTextUI.text = GameManager.Instance.currentScore.ToString();
             Destroy(gameObject);
         }
     }
