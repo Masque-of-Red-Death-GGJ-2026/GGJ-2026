@@ -7,10 +7,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] PlayerInput playerInput;
     [SerializeField] Rigidbody2D rb;
     [SerializeField] private Collider2D collider;
-    [SerializeField] float groundAcceleration;
-    [SerializeField] float playerMaxVelocity;
-    [SerializeField] float jumpForce;
-    [SerializeField] private float airAcceleration;
+    [SerializeField] float jumpForce; // How high the raccoon jumps
     [SerializeField] Animator animator;
     [SerializeField] AudioSource audioSource;
     [SerializeField] private AudioClip[] eatSounds;
@@ -20,9 +17,9 @@ public class PlayerMovement : MonoBehaviour
 
     public EventHandler OnObstacleCollision;
 
-    // Update is called once per frame
     void Start()
     {
+        // Set up listener for jump input
         playerInput.OnJumpInputPressed += On_Jump_Input_Pressed;
     }
 
@@ -30,8 +27,10 @@ public class PlayerMovement : MonoBehaviour
     {
         if (CheckGrounded())
         {
-            rb.AddForce(new Vector2(0, 1) * jumpForce, ForceMode2D.Impulse);
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             animator.SetBool("Jumping", true);
+
+            // Reset variable related jump "buffer" for the raccoons animation
             jumpReadyToCheckGround = false;
             jumpSkipFramesTimer = 0.3f;
         }
@@ -39,6 +38,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        // Timer for a "buffer" on the jump animation switching back to walking animation
+        // So raccoon doesn't switch to walking immediately after jumping
         if (jumpSkipFramesTimer > 0)
         {
             jumpSkipFramesTimer -= Time.deltaTime;
@@ -47,27 +48,26 @@ public class PlayerMovement : MonoBehaviour
         {
             jumpReadyToCheckGround = true;
         }
+
+        // If on ground and buffer since jump has passed
         if (CheckGrounded() && jumpReadyToCheckGround)
         {
             animator.SetBool("Jumping", false);
         }
-        // if (CheckGrounded())
-        // {
-        //     animator.SetBool("Jumping", false);
-        // }
     }
 
     bool CheckGrounded()
     {
+        // Get bottom center of player's collider
         Vector2 bottomCenter = new Vector2(
             collider.bounds.center.x,
             collider.bounds.center.y - collider.bounds.extents.y
         );
         
+        // Boxcast at players feet, if cast hits object on "platform" layer, returns true
         var boxHeight = 0.5f;
         var raycast = Physics2D.BoxCast(bottomCenter, new Vector2(collider.bounds.size.x, boxHeight), 0, Vector2.down, 0f, LayerMask.GetMask("Platform"));
         return raycast.collider;
-        //var raycast = Physics2D.Raycast(bottomCenter, Vector2.down, 0.5f, LayerMask.GetMask("Platform"));
     }
 
     public bool CheckCollision()
@@ -91,16 +91,12 @@ public class PlayerMovement : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D col)
     {
+        // If user is colliding with collectible
         if (col.CompareTag("Collectible"))
         {
-            // Add points via GameManager:
+            // Play collection sound
             audioSource.clip = eatSounds[Random.Range(0, eatSounds.Length)];
             audioSource.Play();
         }
-    }
-
-    void FixedUpdate()
-    {
-        
     }
 }

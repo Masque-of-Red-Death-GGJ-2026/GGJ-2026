@@ -29,9 +29,9 @@ public class GameManager : MonoBehaviour
     GameState gameState = GameState.Level0;
     
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        // Listener for raccoon caught event (for game over)
         catcherChase.OnCatch += On_Catch;
         
         // Hide cursor while playing game:
@@ -57,6 +57,7 @@ public class GameManager : MonoBehaviour
 
     private void On_Catch(object sender, EventArgs e)
     {
+        // Performs losing logic
         gameOver = true;
         GameOver();
         gameOverScreen.ShowGameOver();
@@ -64,16 +65,16 @@ public class GameManager : MonoBehaviour
         gameOverGraphic.SetActive(true);
     }
 
-    private void On_Obstacle_Collision(object sender, EventArgs e)
-    {
-        moveWorld = false;
-    }
+    // private void On_Obstacle_Collision(object sender, EventArgs e)
+    // {
+    //     moveWorld = false;
+    // }
 
     private void CheckWinCondition()
     {
         if (currentScore >= winningScore)
         {
-            // Update UI:
+            // Performs winning logic
             moveWorld = false;
             gameOver = true;
             GameOver();
@@ -112,13 +113,13 @@ public class GameManager : MonoBehaviour
             CheckWinCondition();
         }
 
-        if (playerMovement.CheckCollision())
-        {
-            moveWorld = false;
-        }
-        else
-        {
-            moveWorld = true;
-        }
+        // if (playerMovement.CheckCollision())
+        // {
+        //     moveWorld = false;
+        // }
+        // else
+        // {
+        //     moveWorld = true;
+        // }
     }
 }
