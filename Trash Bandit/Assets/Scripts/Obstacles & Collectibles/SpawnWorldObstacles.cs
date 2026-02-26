@@ -8,8 +8,8 @@ public class SpawnWorldObstacles : MonoBehaviour
     [SerializeField] float spawnCooldownMin;
     [SerializeField] float spawnCooldownMax;
     
-    [SerializeField] float spawnRadius = 5f;
-    [SerializeField] float checkRadius = 1f; 
+    // [SerializeField] float spawnRadius = 5f;
+    [SerializeField] float checkRadius = 5f; 
 
     void Start()
     {
@@ -36,17 +36,20 @@ public class SpawnWorldObstacles : MonoBehaviour
 
     void CheckForConflict() {
         Vector3 spawnPosition = Vector3.zero;
+        int layerMask = LayerMask.GetMask("Platform", "Collectible");
         bool canSpawn = false;
+        int attemptCount = 0;
 
-        while (!canSpawn && gameManager.gameOver == false) {
+        while (!canSpawn && gameManager.gameOver == false && attemptCount < 100) {
             // choose a new random position
-            Vector2 newPosition = new Vector2(transform.position.x + Random.Range(0.0f, 0.005f), transform.position.y);
+            Vector2 newPosition = new Vector2(transform.position.x + Random.Range(0.0f, 1f), transform.position.y);
             // Check there are any box colliders within a circle around it, if so keep the position and spawn 
-            if (!Physics.CheckSphere(newPosition, checkRadius)) {
+            if (!Physics2D.OverlapCircle(newPosition, checkRadius, layerMask)) {
                 canSpawn = true;
                 spawnPosition = newPosition;
             }
             // if space is not clear then repeat with a new position
+            attemptCount++;
         }
         // spawn object in clear space
         if (canSpawn) {
