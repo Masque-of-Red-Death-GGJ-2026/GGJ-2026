@@ -2333,6 +2333,7 @@ MonoBehaviour:
   gameObjectToSpawn: {fileID: 6186027827188374725, guid: 70aa811c2acaf5a48a981fd459052908, type: 3}
   spawnCooldownMin: 0.3
   spawnCooldownMax: 5
+  checkRadius: 5
 --- !u!1 &1263879639
 GameObject:
   m_ObjectHideFlags: 0

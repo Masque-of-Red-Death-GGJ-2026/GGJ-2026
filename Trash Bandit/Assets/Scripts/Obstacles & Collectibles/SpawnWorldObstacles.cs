@@ -36,7 +36,7 @@ public class SpawnWorldObstacles : MonoBehaviour
 
     void CheckForConflict() {
         Vector3 spawnPosition = Vector3.zero;
-        int layerMask = LayerMask.GetMask("Platform", "Collectible");
+        int layerMask = LayerMask.GetMask("Collectible");
         bool canSpawn = false;
         int attemptCount = 0;
 
