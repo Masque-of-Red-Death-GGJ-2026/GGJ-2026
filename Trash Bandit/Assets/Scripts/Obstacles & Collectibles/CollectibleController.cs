@@ -14,21 +14,13 @@ public class CollectibleController : MonoBehaviour
         gameObject.GetComponentInChildren<SpriteRenderer>().sprite = sprites[Random.Range(0, sprites.Length)];
     }
 
+    public float checkRadius = 10f;
     // Update is called once per frame
     void Update()
     {
         // Move towards player:
         float step = 1.0f * Time.deltaTime;
         transform.position += new Vector3(-1, 0) * speed * Time.deltaTime;
-        
-        // Check if overlaping with obstacle (if found, destroy):
-        foreach (GameObject obstacle in GameObject.FindGameObjectsWithTag("Obstacle"))
-        {
-            if (gameObject.transform.position.x == obstacle.transform.position.x)
-            {
-                Destroy(gameObject);
-            }
-        }
 
         // If object out of view, destroy:
         if (gameObject.transform.position.x <= -11)

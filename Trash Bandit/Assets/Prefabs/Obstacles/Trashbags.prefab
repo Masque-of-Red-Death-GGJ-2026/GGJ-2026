@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4673421035368905113}
   - component: {fileID: 7132003672799588790}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Small_Trashbag
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78,8 +78,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 474194793
-  m_SortingLayer: 1
-  m_SortingOrder: 1
+  m_SortingLayer: 2
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 613def6998ad948a0b6155d583a0390e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 5215401262765145638}
   - component: {fileID: 8397952698396670832}
   - component: {fileID: 4452637163513129952}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Trashbags
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -222,7 +222,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.967522, y: 0.33}
+  m_Offset: {x: -1.0852945, y: 0.32999998}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -232,7 +232,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.3041403, y: 0.99049556}
+  m_Size: {x: 1.0685954, y: 0.99049556}
   m_EdgeRadius: 0
 --- !u!1 &6758798825224101329
 GameObject:
@@ -244,7 +244,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1856912660652446103}
   - component: {fileID: 1579256327776494565}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Trashbag
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -312,8 +312,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 474194793
-  m_SortingLayer: 1
-  m_SortingOrder: -10
+  m_SortingLayer: 2
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 6cc9f2e9ba58a4fee9a2d9f4d63b4e15, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

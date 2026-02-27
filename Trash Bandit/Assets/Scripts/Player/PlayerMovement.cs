@@ -66,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
         
         // Boxcast at players feet, if cast hits object on "platform" layer, returns true
         var boxHeight = 0.5f;
-        var raycast = Physics2D.BoxCast(bottomCenter, new Vector2(playerCollider.bounds.size.x, boxHeight), 0, Vector2.down, 0f, LayerMask.GetMask("Platform"));
+        var raycast = Physics2D.BoxCast(bottomCenter, new Vector2(collider.bounds.size.x, boxHeight), 0, Vector2.down, 0f, LayerMask.GetMask("Platform", "Obstacle"));
         return raycast.collider;
     }
 

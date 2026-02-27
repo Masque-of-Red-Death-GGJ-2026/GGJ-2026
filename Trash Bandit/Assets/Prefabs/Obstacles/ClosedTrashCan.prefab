@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2283378617717099297}
   - component: {fileID: 4906663038110822389}
   - component: {fileID: 4079087762480639833}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: ClosedTrashCan
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8825823164634106389}
   - component: {fileID: 2603642549315816277}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: ObstacleSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 474194793
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: c5fa64506d2454d9382d9645acc34b88, type: 3}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8540323754768495586}
   - component: {fileID: 5215401262765145638}
   - component: {fileID: 8397952698396670832}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: MailBox
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1856912660652446103}
   - component: {fileID: 1579256327776494565}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: ObstacleSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

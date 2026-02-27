@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8112647019626143227}
   - component: {fileID: 5299797468843736911}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 8622978525630905162}
   - component: {fileID: 7862639542371742913}
   - component: {fileID: 2939819975366079873}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Collectible
   m_TagString: Collectible
   m_Icon: {fileID: 0}
@@ -194,3 +194,4 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f3a6ad3f9666441b99d389a68e43ec0d, type: 3}
   - {fileID: 21300000, guid: a66b9ac42c0ff4d248b53635cfb319a5, type: 3}
   - {fileID: 21300000, guid: e70cb74ddaef24cc6873c1bc29d7ab70, type: 3}
+  checkRadius: 5
