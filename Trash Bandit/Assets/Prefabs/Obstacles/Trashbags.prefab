@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4673421035368905113}
   - component: {fileID: 7132003672799588790}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Small_Trashbag
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 5215401262765145638}
   - component: {fileID: 8397952698396670832}
   - component: {fileID: 4452637163513129952}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Trashbags
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -244,7 +244,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1856912660652446103}
   - component: {fileID: 1579256327776494565}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Trashbag
   m_TagString: Untagged
   m_Icon: {fileID: 0}

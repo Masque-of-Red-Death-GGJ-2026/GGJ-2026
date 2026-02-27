@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2283378617717099297}
   - component: {fileID: 4906663038110822389}
   - component: {fileID: 4079087762480639833}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: ClosedTrashCan
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8825823164634106389}
   - component: {fileID: 2603642549315816277}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: ObstacleSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
