@@ -1386,7 +1386,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 341afcba0be6f418fb3fd0193d5e2e62, type: 3}
+  m_Resource: {fileID: 8300000, guid: 19f52ff2f30aef1419c8fbd3edaadff7, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1484,9 +1484,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b8cd9ae39a674898aaf0af195b9b608, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MusicManager
-  gameOver: {fileID: 8300000, guid: 3371669f34ff34ae8ae2839d58972077, type: 3}
+  gameOver: {fileID: 8300000, guid: d0d6e8db2cc13c94ca31d8ee2e500597, type: 3}
   gameMusic: {fileID: 641168281}
-  gameWin: {fileID: 8300000, guid: 2b4e044e842d24c34a9f502edf4c5907, type: 3}
+  gameWin: {fileID: 8300000, guid: c88a8f107ecdfde4aa6cf02806032581, type: 3}
 --- !u!4 &641168283
 Transform:
   m_ObjectHideFlags: 0
@@ -2008,7 +2008,6 @@ MonoBehaviour:
   jumpForce: 30
   animator: {fileID: 1684228201}
   audioSource: {fileID: 921030309}
-  chitterSounds: []
   eatSounds:
   - {fileID: 8300000, guid: 1f90b5a3f966d4b71b37e1b2002640d2, type: 3}
   - {fileID: 8300000, guid: feb406e3e1a02436fbd1e4b04e6609f4, type: 3}
