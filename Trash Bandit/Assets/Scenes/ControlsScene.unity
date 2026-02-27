@@ -609,7 +609,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Spacebar: Jump'
+  m_text: 'Spacebar: Jump
+
+    C: Chitter'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c00892a4246203a43bcd37bff9076b37, type: 2}
   m_sharedMaterial: {fileID: -8681185643080195915, guid: c00892a4246203a43bcd37bff9076b37, type: 2}
@@ -753,7 +755,7 @@ AudioSource:
   m_GameObject: {fileID: 1216899159}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -765230235695299962, guid: f39c290dcee133c4399086608d03e6d0, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 32414931c46ea584ba975dae9c84c27f, type: 3}
   m_PlayOnAwake: 1
