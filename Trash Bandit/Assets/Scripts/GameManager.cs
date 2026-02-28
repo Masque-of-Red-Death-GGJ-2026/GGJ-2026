@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
     public bool gameOver = false;
     public TextMeshProUGUI GameScoreTextUI;
     [SerializeField] GameObject gameOverGraphic;
+    [SerializeField] GameObject gameWinGraphic;
     public GameState gameState {get; private set;} = GameState.Level0;
 
     public event EventHandler OnGameStateChanged;
@@ -83,6 +84,7 @@ public class GameManager : MonoBehaviour
                     gameOver = true;
                     GameOver();
                     GameWinScreen.SetActive(true);
+                    gameWinGraphic.SetActive(true);
                     musicManager.playWin();
                     ChangeGameState(GameState.GameWon);
                 }

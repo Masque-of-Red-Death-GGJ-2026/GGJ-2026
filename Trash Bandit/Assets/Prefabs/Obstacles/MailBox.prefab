@@ -68,7 +68,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.05, y: 3.7}
+  m_Offset: {x: -0.06269741, y: 3.5857234}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -78,7 +78,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.5, y: 1.1}
+  m_Size: {x: 1.0129735, y: 1.3488684}
   m_EdgeRadius: 0
 --- !u!114 &8397952698396670832
 MonoBehaviour:
@@ -92,7 +92,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 134b839d67166b0478a5ad95274d4244, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyObstacleOutOfView
-  gameManager: {fileID: 0}
   moveObstacleVector: {x: 5, y: 0}
   target: {x: -11, y: 0}
 --- !u!1 &6758798825224101329
