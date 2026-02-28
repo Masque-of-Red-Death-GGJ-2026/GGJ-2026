@@ -1,9 +1,21 @@
 using System;
 using UnityEngine;
 using TMPro;
+using System.Runtime.InteropServices;
 
 public class GameManager : MonoBehaviour
 {
+
+    public static GameManager Instance{get; private set;}
+    public enum GameState
+    {
+        GameLost,
+        Level0,
+        Level1,
+        Level2,
+        Level3,
+        GameWon
+    }
     [SerializeField] PlayerMovement playerMovement;
     [SerializeField] CatcherChase catcherChase;
     [SerializeField] GameOverScreenScript gameOverScreen;
@@ -17,8 +29,14 @@ public class GameManager : MonoBehaviour
     public bool gameOver = false;
     public TextMeshProUGUI GameScoreTextUI;
     [SerializeField] GameObject gameOverGraphic;
-    
-    
+    public GameState gameState {get; private set;} = GameState.Level0;
+
+    public event EventHandler OnGameStateChanged;
+
+    void Awake()
+    {
+        Instance  = this;
+    }
     void Start()
     {
         // Listener for raccoon caught event (for game over)
@@ -28,32 +46,61 @@ public class GameManager : MonoBehaviour
         Cursor.visible = false;
     }
 
-    private void On_Catch(object sender, EventArgs e)
+    void Update()
     {
-        // Performs losing logic
-        gameOver = true;
-        GameOver();
-        gameOverScreen.ShowGameOver();
-        musicManager.playGameOver();
-        gameOverGraphic.SetActive(true);
+        switch(gameState)
+        {
+            case GameState.GameLost:
+                gameOver = true;
+                GameOver();
+                gameOverScreen.ShowGameOver();
+                musicManager.playGameOver();
+                gameOverGraphic.SetActive(true);
+                break;
+            case GameState.Level0:
+                if (currentScore >= 3)
+                {
+                    ChangeGameState(GameState.Level1);
+                }
+                break;
+            case GameState.Level1:
+                if (currentScore > 5)
+                {
+                    ChangeGameState(GameState.Level2);
+                }
+                break;
+            case GameState.Level2:
+                if (currentScore > 7)
+                {
+                    ChangeGameState(GameState.Level3);
+                }
+                break;
+            case GameState.Level3:
+                if (currentScore >= 10)
+                {
+                    OnGameStateChanged?.Invoke(this, EventArgs.Empty);
+                    moveWorld = false;
+                    gameOver = true;
+                    GameOver();
+                    GameWinScreen.SetActive(true);
+                    musicManager.playWin();
+                    ChangeGameState(GameState.GameWon);
+                }
+                break;
+            case GameState.GameWon:
+                break;
+        }
     }
 
-    // private void On_Obstacle_Collision(object sender, EventArgs e)
-    // {
-    //     moveWorld = false;
-    // }
-
-    private void CheckWinCondition()
+    private void On_Catch(object sender, EventArgs e)
     {
-        if (currentScore >= winningScore)
-        {
-            // Performs winning logic
-            moveWorld = false;
-            gameOver = true;
-            GameOver();
-            GameWinScreen.SetActive(true);
-            musicManager.playWin();
-        }
+        ChangeGameState(GameState.GameLost);
+    }
+
+    private void ChangeGameState(GameState gameState)
+    {
+        OnGameStateChanged?.Invoke(this, EventArgs.Empty);
+        this.gameState = gameState;
     }
 
     private void GameOver()
@@ -75,24 +122,5 @@ public class GameManager : MonoBehaviour
 
         // Display cursor:
         Cursor.visible = true;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        // Check if game is won each frame:
-        if (!gameOver)
-        {
-            CheckWinCondition();
-        }
-
-        // if (playerMovement.CheckCollision())
-        // {
-        //     moveWorld = false;
-        // }
-        // else
-        // {
-        //     moveWorld = true;
-        // }
     }
 }

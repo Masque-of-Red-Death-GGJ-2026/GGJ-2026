@@ -20,7 +20,6 @@ public class MusicManager : MonoBehaviour
 
     public void playWin()
     {
-        Debug.Log("Game Win");
         gameMusic.Pause();
         gameMusic.loop = false;
         gameMusic.clip = gameWin;

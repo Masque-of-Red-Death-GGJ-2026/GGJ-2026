@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] PlayerInput playerInput;
     [SerializeField] Rigidbody2D rb;
-    [SerializeField] private Collider2D collider;
+    [SerializeField] private Collider2D playerCollider;
     [SerializeField] float jumpForce; // How high the raccoon jumps
     [SerializeField] Animator animator;
     [SerializeField] AudioSource audioSource;
@@ -74,24 +74,24 @@ public class PlayerMovement : MonoBehaviour
     {
         // Get bottom center of player's collider
         Vector2 bottomCenter = new Vector2(
-            collider.bounds.center.x,
-            collider.bounds.center.y - collider.bounds.extents.y
+            playerCollider.bounds.center.x,
+            playerCollider.bounds.center.y - playerCollider.bounds.extents.y
         );
         
         // Boxcast at players feet, if cast hits object on "platform" layer, returns true
         var boxHeight = 0.5f;
-        var raycast = Physics2D.BoxCast(bottomCenter, new Vector2(collider.bounds.size.x, boxHeight), 0, Vector2.down, 0f, LayerMask.GetMask("Platform", "Obstacle"));
+        var raycast = Physics2D.BoxCast(bottomCenter, new Vector2(playerCollider.bounds.size.x, boxHeight), 0, Vector2.down, 0f, LayerMask.GetMask("Platform", "Obstacle"));
         return raycast.collider;
     }
 
     public bool CheckCollision()
     {
         Vector3 rightCenter = new Vector3(
-            collider.bounds.center.x + collider.bounds.extents.x,
-            collider.bounds.center.y
+            playerCollider.bounds.center.x + playerCollider.bounds.extents.x,
+            playerCollider.bounds.center.y
         );
         var boxHeight = 0.5f;
-        var collisioncast = Physics2D.BoxCast(rightCenter, new Vector2(boxHeight ,collider.bounds.size.y), 0, Vector2.right, 0f);
+        var collisioncast = Physics2D.BoxCast(rightCenter, new Vector2(boxHeight ,playerCollider.bounds.size.y), 0, Vector2.right, 0f);
         return collisioncast.collider;
     }
 
