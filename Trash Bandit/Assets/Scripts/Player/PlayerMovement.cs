@@ -10,7 +10,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float jumpForce; // How high the raccoon jumps
     [SerializeField] Animator animator;
     [SerializeField] AudioSource audioSource;
+    [SerializeField] private AudioClip[] chitterSounds;
     [SerializeField] private AudioClip[] eatSounds;
+
 
     private float jumpSkipFramesTimer;
     private bool jumpReadyToCheckGround;
@@ -21,6 +23,9 @@ public class PlayerMovement : MonoBehaviour
     {
         // Set up listener for jump input
         playerInput.OnJumpInputPressed += On_Jump_Input_Pressed;
+
+        // Set up listener for chitter input
+        playerInput.OnChitterInputPressed += On_Chitter_Input_Pressed;
     }
 
     private void On_Jump_Input_Pressed(object sender, EventArgs e)
@@ -34,6 +39,15 @@ public class PlayerMovement : MonoBehaviour
             jumpReadyToCheckGround = false;
             jumpSkipFramesTimer = 0.3f;
         }
+    }
+
+    private void On_Chitter_Input_Pressed(object sender, EventArgs e)
+    {
+        SoundFXManager.instance.PlaySoundFXClip(
+            chitterSounds[Random.Range(0, chitterSounds.Length)],
+            transform,
+            1f
+        );
     }
 
     private void Update()
